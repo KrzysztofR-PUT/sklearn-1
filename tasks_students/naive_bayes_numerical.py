@@ -23,7 +23,7 @@ y_iris_test = y_iris[n_train:]
 # Implement and test Naive Bayes Classifier supporting categorical data
 mgnb = NaiveBayesGaussian()
 mgnb.fit(X_iris_train, y_iris_train)
-
+print(mgnb.predict_proba(X_iris_train))
 test_model(mgnb, X_iris_train, y_iris_train, False)
 test_model(mgnb, X_iris_test, y_iris_test, False)
 
